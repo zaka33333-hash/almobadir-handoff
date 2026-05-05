@@ -1,0 +1,87 @@
+/* ════════════════════════════════════════════════════════════════
+   Almobadir — brand fonts
+   ════════════════════════════════════════════════════════════════
+   STATUS: brand font files not yet shipped.
+
+   The site currently renders the fallback chain declared in
+   tokens.css (--font-ar-display, --font-ar-body, --font-ar-alt):
+     Almarai · Reem Kufi · Tajawal · Cairo · IBM Plex Sans Arabic
+   loaded via Google Fonts from <link> in index.html <head>.
+
+   When the licensed Mostaqbali / Graphik Arabic / Madani Arabic
+   files arrive:
+     1. drop the woff2 files into /assets/fonts/
+     2. uncomment the @font-face block below
+     3. the browser will pick them up automatically because the
+        fallback chain in tokens.css already lists the brand names
+        as the first entry.
+
+   The previous version of this file declared 11 @font-face rules
+   pointing at files that didn't exist, which produced 44 console
+   404s on every page-load (4 src formats × 11 declarations).
+   Stubbing out keeps the load tree clean until the real files ship.
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── MOSTAQBALI — display / titles / hero wordmark ─────────────────
+@font-face {
+  font-family: 'Mostaqbali';
+  src: url('fonts/Mostaqbali-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Mostaqbali';
+  src: url('fonts/Mostaqbali-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Mostaqbali';
+  src: url('fonts/Mostaqbali-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Mostaqbali';
+  src: url('fonts/Mostaqbali-Black.woff2') format('woff2');
+  font-weight: 900; font-style: normal; font-display: swap;
+}
+*/
+
+/* ── GRAPHIK ARABIC — body / headings / UI ─────────────────────────
+@font-face {
+  font-family: 'Graphik Arabic';
+  src: url('fonts/GraphikArabic-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Graphik Arabic';
+  src: url('fonts/GraphikArabic-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Graphik Arabic';
+  src: url('fonts/GraphikArabic-Semibold.woff2') format('woff2');
+  font-weight: 600; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Graphik Arabic';
+  src: url('fonts/GraphikArabic-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+*/
+
+/* ── MADANI ARABIC — alt accent ────────────────────────────────────
+@font-face {
+  font-family: 'Madani Arabic';
+  src: url('fonts/MadaniArabic-Regular.woff2') format('woff2');
+  font-weight: 400; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Madani Arabic';
+  src: url('fonts/MadaniArabic-Medium.woff2') format('woff2');
+  font-weight: 500; font-style: normal; font-display: swap;
+}
+@font-face {
+  font-family: 'Madani Arabic';
+  src: url('fonts/MadaniArabic-Bold.woff2') format('woff2');
+  font-weight: 700; font-style: normal; font-display: swap;
+}
+*/

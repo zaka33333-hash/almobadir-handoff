@@ -1,0 +1,29 @@
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node (in case anyone runs `npm install` inside website/)
+website/node_modules/
+website/.cache/
+website/dist/
+
+# Python
+__pycache__/
+*.pyc
+
+# Playwright artifacts
+.playwright-mcp/
+playwright-report/
+test-results/
+
+# Local env
+.env
+.env.local
