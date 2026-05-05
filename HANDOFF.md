@@ -7,7 +7,9 @@
 
 ## 0 · Identity & operating posture
 
-You are working alongside **Badr Shaker** — founder of Almobadir, a Saudi-anchored, pan-Arab business + finance media network (~3.3M followers across 11 active social handles, AR primary + EN mirror). His brother **Zakariae** has been the day-to-day project manager / forwarder. You will mostly be talking to Zakariae; Badr surfaces for strategic decisions.
+You are working alongside **Badr Shaqer** — founder of Almobadir, a **pan-Arab / MENA** business + finance media network (~3.3M followers across 11 active social handles, AR primary + EN mirror). His brother **Zakariae** has been the day-to-day project manager / forwarder. You will mostly be talking to Zakariae; Badr surfaces for strategic decisions.
+
+**The brand is nationality-neutral on purpose.** Public-facing copy never anchors to a single country. See §2 for the Public-vs-Internal split.
 
 Operating manual (cannot be relaxed):
 
@@ -59,16 +61,31 @@ If a file > 5KB, read surgically (Grep + Read with offset). Don't dump full cont
 
 ## 2 · The brand · 90-second briefing
 
+### Public-facing positioning (use this in any external-touching copy)
+
 - **Almobadir / المبادر** = Arabic word meaning "the initiator / pioneer"
-- **Founder:** Badr Shaker (also transliterated Shaqer / Chaker — Maghrebi-origin, Riyadh-based since 2018, born Morocco 1994)
+- **Founder:** Badr Shaqer (also transliterated Shaker / Chaker)
 - **Founded:** 2022
-- **HQ:** Riyadh, Saudi Arabia
 - **Reach:** ~3.3M followers · 25M monthly views · 11 active channels (7 Instagram + 4 TikTok)
 - **Brand promise:** «محتوى يغنيك عن دورات كاملة» — "content that replaces full courses"
-- **Audience:** Pan-Arab business + finance + self-development readers. Saudi-priced premium tier on top.
-- **Agency:** Almobadir Media — the executional arm. 143+ clients served. Calendly funnel: `calendly.com/badrshaqer_consulting/almobadirmedia`
+- **Audience:** pan-Arab / MENA business + finance + self-development readers
+- **Agency:** Almobadir Media — the executional arm. 143+ clients served. Calendly: `calendly.com/badrshaqer_consulting/almobadirmedia`
+- **Consulting:** Badrshaqer.com — sessions and transformation packs
+- **MENA-test for any line of copy:** would the same line work whether the reader is in Cairo, Casablanca, Riyadh, Amman, or Dubai? If no, rewrite.
+
+### Internal context only — DO NOT surface externally
+
+These facts are operational reality and must inform decisions, but they never appear in published copy, the about page, the press kit, or partner decks.
+
+- **Founder origin:** Maghrebi (Moroccan, born 1994). Badr stays nationality-neutral on purpose — never name his country externally.
+- **Operational base:** Riyadh-based since 2018. Where the team works from. The site footer / about page does not name a country.
+- **Pricing strategy:** premium tier is calibrated to Saudi purchasing power, but framed in regional / value terms in copy — never "Saudi-priced".
+- **Saudi-specific data points** (e.g., the 22.9% Saudi SME-to-GDP gap referenced in the rolled-back v2 essay) can appear as **examples or case data inside content**, never as the brand's anchor.
+- **Legal jurisdiction:** privacy policy is Saudi PDPL + GDPR compliant; terms use Saudi governing law. This is operational legal scaffolding, not positioning — don't surface in marketing.
 
 The CONTENT-PACK has the canonical 28-word AR + EN positioning statement. Do not improvise alternates.
+
+> **Known gap (open task):** the live `/about/` and `/en/about/` pages currently lean on the Riyadh + Morocco→Riyadh trajectory in their copy. Audit and rewrite both pages against the public-facing positioning above. See §3 "What's NOT wired yet" for tracking.
 
 ### The 11 active handles + verified follower counts (Q2 2026)
 
@@ -145,8 +162,9 @@ Tag:        publication-v2-attempt → c9c9572  (a Stratechery-style restructure
 | Item | Status | Blocked on |
 |---|---|---|
 | **DNS at Hostinger** | Records given to founder | Founder action (add 4 A + 4 AAAA + 1 CNAME records) |
-| **GitHub Pages custom domain** | CNAME file in repo | Founder needs to set in repo Settings → Pages → Custom domain |
+| **GitHub Pages custom domain** | CNAME file **reverted** in commit `37a247c` while DNS pending — re-add atomically with the DNS cutover | Founder needs to set in repo Settings → Pages → Custom domain after DNS lands |
 | **HTTPS for almobadir.com** | Auto via Let's Encrypt | Pending DNS resolution |
+| **Nationality-neutral audit on /about/ and /en/about/** | Pages currently lean on Riyadh + Morocco→Riyadh trajectory; must be rewritten pan-MENA per §2 | Founder MCQ Round 2 answer (or apply default rewrite) |
 | **Newsletter ESP** | Simulation mode | Awaiting founder's pick (Buttondown / Resend+CF Workers / defer) |
 | **Plausible dashboard** | Script tag deployed | Founder needs to register `almobadir.com` at plausible.io |
 | **MBA-Marketing claim** | Founder said KEEP | Pending verifiable LinkedIn Education entry |
@@ -251,7 +269,7 @@ Plus three open-ended:
 ## 8 · Things you do NOT do (anti-patterns)
 
 - ❌ Add a blog at `/blog/` (would launch with 0 posts and look worse than no blog)
-- ❌ Add live chat widget (Intercom / Crisp / Drift) — wrong channel for Saudi B2B
+- ❌ Add live chat widget (Intercom / Crisp / Drift) — wrong channel for Arab / MENA B2B
 - ❌ Newsletter popup / scroll-trigger modal (violates motion-signature anti-pattern list)
 - ❌ A third language beyond AR + EN
 - ❌ Members-only login / website paywall (newsletter handles the gated relationship)
